@@ -13,11 +13,7 @@ fn main() {
     }
 }
 
-// --snip--
-
 fn handle_connection(mut stream: TcpStream) {
-    // --snip--
-
     let mut buffer = [0; 1024];
     stream.read(&mut buffer).unwrap();
 
